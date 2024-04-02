@@ -5,7 +5,7 @@ comment_router = APIRouter(prefix='/comment', tags=['Работа с комме�
 # Получить все комментарии определенного задания
 @comment_router.get('/all-comments')
 async def all_comments(post_id:int):
-    return get_task_comments_db(post_id)
+    return  get_task_comments_db(post_id)
 # Для добавления комментария
 @comment_router.post('/add-comment')
 async def add_comment(post_id:int, comment_text:str, userid:int):

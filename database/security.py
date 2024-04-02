@@ -1,5 +1,7 @@
 import jwt
 from datetime import datetime, timedelta
+import jwt
+
 
 SECRET_KEY = 'Nigina-uaef98bg9824b9834g98'
 ALGORITHM = 'HS256'

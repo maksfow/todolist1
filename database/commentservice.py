@@ -13,7 +13,7 @@ def add_comment_db(post_id,comment_text, userid):
     else:
         return 'Нету такого поста (('
 
-# Удаления комментарий
+# Удаление комментария
 def delete_comment_db(post_id, comment_id):
     db = next(get_db())
     exact_comment = db.query(Comment).filter_by(post_id=post_id, comment_id=comment_id).first()
